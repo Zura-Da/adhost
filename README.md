@@ -1,4 +1,4 @@
-# Host Enumeration Script
+# HTB Host Enumeration Script
 
 This Bash script automates the process of adding a host to `/etc/hosts` and performing an Nmap scan on the specified IP address. It is designed to simplify host enumeration during penetration testing or network reconnaissance.
 
