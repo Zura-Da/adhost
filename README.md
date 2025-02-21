@@ -19,14 +19,14 @@ This Bash script automates the process of adding a host to `/etc/hosts` and perf
 ### **1. Interactive Mode**
 If no arguments are provided, the script will prompt for the IP address and hostname:
 ```bash
-(user㉿host)-[~] ./host_enum.sh
+(user㉿host)-[~] ./adhost.sh
 add host IP: 10.10.10.5
 add host name: example
 ```
 ### **2. Command-Line Mode**
 You can provide the IP address and hostname as arguments:
 ```bash
-(user㉿host)-[~] ./host_enum.sh <IP> <Hostname>
+(user㉿host)-[~] ./adhost.sh <IP> <Hostname>
 ```
   -If the first argument contains 10.10., it is treated as the IP address.
 
@@ -35,10 +35,10 @@ You can provide the IP address and hostname as arguments:
 Examples:
 ```bash
 # First argument contains "10.10."
-(user㉿host)-[~] ./host_enum.sh 10.10.10.5 example
+(user㉿host)-[~] ./adhost.sh 10.10.10.5 example
 
 # First argument does not contain "10.10."
-(user㉿host)-[~] ./host_enum.sh example 192.168.1.10
+(user㉿host)-[~] ./adhost.sh example 192.168.1.10
 ```
 ## **Output**
 
@@ -54,7 +54,7 @@ ff02::1         ip6-allnodes
 ff02::2         ip6-allrouters
 
 
-**<IP> <Hostname>.htb**
+<IP> <Hostname>.htb
 ```
 Nmap Scan Results:
 
